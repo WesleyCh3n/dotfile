@@ -1,0 +1,50 @@
+vi ol.cpp
+touch new.cpp
+touch new1.cpp
+touch new2.cpp
+touch new22.cpp
+set hidden_filter
+:shell -w printf %c
+shell -w printf %c
+shell -w printf %c | xargs rm
+open_with Shell
+delete 
+unmark 
+rename seanborn_plot.py
+search syntax
+search high
+open_with 
+mkdir opcv
+rename img.jpg
+search x
+search pr
+search pre
+delete
+rename WesleyChen.jpg
+rename WesleyChen1.jpg
+rename one-shot
+rename wallpaper.png
+rename color
+rename colors
+rename config
+find config
+mkdir upload
+mkdir cow
+rename 1.jpg
+rename 2.jpg
+mkdir sync
+search sync
+search vim
+search vimr
+mkdir dotfile
+search zsh
+search tmux
+search vimrc
+search dotfile
+mkdir config
+
+search config
+search dot
+search .config
+search comp
+search vis
