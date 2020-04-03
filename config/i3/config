@@ -277,6 +277,8 @@ bindsym Mod1+r exec kitty -e ranger
 bindsym Mod1+m exec kitty -e mpsyt
 bindsym $mod+Shift+f exec nautilus
 
+bindsym Mod1+Shift+1 exec gnome-screenshot -i
+
 # Autostart applications
 # exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id compton -b
@@ -290,5 +292,5 @@ exec_always --no-startup-id $HOME/.config/polybar/i3wmthemer_bar_launch.sh
 exec_always feh --bg-scale ~/Pictures/flower.jpg
 # exec_always ibus-daemon -d
 # exec_always ibus engine chewing
-exec_always xrandr --output eDP-1 --brightness 0.75
+exec_always xrandr --output eDP-1 --brightness 0.60
 

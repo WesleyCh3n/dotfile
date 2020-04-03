@@ -66,7 +66,6 @@ alias ssha='ssh autolab@autolab -p 2222'
 alias sshy='ssh y0ch3n@140.112.94.129 -p 2020'
 alias cdg='cd ~/Documents/GitHub/'
 alias rg='. ranger'
-# alias cl='clear'
 alias ls='colorls';
 
 ############## 
