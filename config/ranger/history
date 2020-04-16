@@ -24,7 +24,6 @@ search vim
 search vimr
 mkdir dotfile
 search zsh
-search tmux
 search vimrc
 search dotfile
 mkdir config
@@ -48,3 +47,4 @@ mkdir
 mkdir bot
 open_with%space
 mkdir Y0Ch3nBot
+search tmux
