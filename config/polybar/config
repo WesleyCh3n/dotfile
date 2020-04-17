@@ -24,7 +24,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 
 modules-center = date 
-modules-right = cpu wlan pulseaudio-control powermenu
+modules-right = wlan cpu pulseaudio-control powermenu
 
 ;tray-position = none
 ; other tray settings
@@ -50,7 +50,14 @@ ramp-coreload-4 = ▅
 ramp-coreload-5 = ▆
 ramp-coreload-6 = ▇
 ramp-coreload-7 = █
-label-foreground = #9cd6cf
+ramp-coreload-0-foreground = #9cd6cf
+ramp-coreload-1-foreground = #9cd6cf
+ramp-coreload-2-foreground = #9cd6cf
+ramp-coreload-3-foreground = #9cd6cf
+ramp-coreload-4-foreground = #9cd6cf
+ramp-coreload-5-foreground = #9cd6cf
+ramp-coreload-6-foreground = #9cd6cf
+ramp-coreload-7-foreground = #9cd6cf
 
 [module/wlan]
 type = internal/network
@@ -61,7 +68,7 @@ format-connected-prefix    = " "
 format-disconnected-prefix = " "
 format-disconnected-prefix-foreground = #FF0000
 label-connected         = %essid%
-label-disconnected      = Disconnected
+label-disconnected      = 
 label-disconnected-foreground = #FF0000
 
 [module/pulseaudio-control]

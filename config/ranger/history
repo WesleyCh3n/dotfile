@@ -29,7 +29,6 @@ search dotfile
 mkdir config
 search config
 search dot
-search .config
 search comp
 search vis
 search cow
@@ -48,3 +47,4 @@ mkdir bot
 open_with%space
 mkdir Y0Ch3nBot
 search tmux
+search .config
