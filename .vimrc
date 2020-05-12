@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround'
 Plug 'Raimondi/delimitMate'
 Plug 'Yggdroot/indentLine'
 Plug 'tpope/vim-fugitive'
+Plug 'vim-latex/vim-latex'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tmhedberg/SimpylFold'
@@ -45,6 +46,7 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Plugin: delimitMate
 let delimitMate_expand_cr = 1
+
 " Plugin: indentLine
 let g:indentLine_color_term = 239
 let g:indentLine_char = '┆'
@@ -102,6 +104,8 @@ nnoremap ,c :call CenterToggle()<cr>
 
 " Plugin: NERDTree
 map <C-n> :NERDTreeToggle<cr>
+let NERDTreeMinimalUI = 1
+let NERDTreeQuitOnOpen = 1
 let NERDTreeShowLineNumbers=1
 augroup nerdtree_
     autocmd!
@@ -122,6 +126,14 @@ nnoremap <silent> <Up>    :call animate#window_delta_height(5)<CR>
 nnoremap <silent> <Down>  :call animate#window_delta_height(-5)<CR>
 nnoremap <silent> <Right>  :call animate#window_delta_width(5)<CR>
 nnoremap <silent> <Left> :call animate#window_delta_width(-5)<CR>
+
+" Plugin: letax-preview
+let g:livepreview_previewer = 'evince'
+let g:livepreview_engine = 'xelatex'
+
+" Plugin: vim-latex
+filetype plugin on
+filetype indent on
 
 "=============================================="
 " Vim Configuration"

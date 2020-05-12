@@ -1,10 +1,15 @@
+[colors]
+theme-left = #ffffff
+theme-center = #ffffff
+theme-right = #555555
+; 9cd6cf
+
 [bar/i3wmthemer_bar]
 width = 100%
 height = 30
 radius = 0
 fixed-center = true
 
-;background = #991f1f1f
 background = #00000000
 foreground = #c6c6c6
 
@@ -24,13 +29,7 @@ font-2 = "Font Awesome 5 Brands:size=10;1"
 
 modules-left = i3 
 modules-center = date 
-modules-right = wlan cpu pulseaudio-control powermenu
-
-;tray-position = none
-; other tray settings
-
-;override-redirect = true
-;wm-restack = i3
+modules-right = cpu pulseaudio-control wlan powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -50,23 +49,25 @@ ramp-coreload-4 = ▅
 ramp-coreload-5 = ▆
 ramp-coreload-6 = ▇
 ramp-coreload-7 = █
-ramp-coreload-0-foreground = #9cd6cf
-ramp-coreload-1-foreground = #9cd6cf
-ramp-coreload-2-foreground = #9cd6cf
-ramp-coreload-3-foreground = #9cd6cf
-ramp-coreload-4-foreground = #9cd6cf
-ramp-coreload-5-foreground = #9cd6cf
-ramp-coreload-6-foreground = #9cd6cf
-ramp-coreload-7-foreground = #9cd6cf
+ramp-coreload-0-foreground = ${colors.theme-right}
+ramp-coreload-1-foreground = ${colors.theme-right}
+ramp-coreload-2-foreground = ${colors.theme-right}
+ramp-coreload-3-foreground = ${colors.theme-right}
+ramp-coreload-4-foreground = ${colors.theme-right}
+ramp-coreload-5-foreground = ${colors.theme-right}
+ramp-coreload-6-foreground = ${colors.theme-right}
+ramp-coreload-7-foreground = ${colors.theme-right}
 
 [module/wlan]
 type = internal/network
 interface = wlp2s0
-format-connected    = %{A1:$HOME/.config/polybar/scripts/dmenu-wifi:}<label-connected>%{A}
+;format-connected    = %{A1:$HOME/.config/polybar/scripts/dmenu-wifi:}<label-connected>%{A}
+format-connected    = %{A1:$HOME/.config/polybar/scripts/dmenu-wifi:}%{A}
 format-disconnected = %{A1:$HOME/.config/polybar/scripts/dmenu-wifi:}<label-disconnected>%{A}
 format-connected-prefix    = " "
+format-connected-prefix-foreground = ${colors.theme-right}
 format-disconnected-prefix = " "
-format-disconnected-prefix-foreground = #FF0000
+format-disconnected-prefix-foreground = ${colors.theme-right}
 label-connected         = %essid%
 label-disconnected      = 
 label-disconnected-foreground = #FF0000
@@ -75,7 +76,7 @@ label-disconnected-foreground = #FF0000
 type = custom/script
 tail = true
 label=%output%
-format-underline = #8abeb7
+format-underline = ${colors.theme-right}
 
 exec = ~/.config/polybar/scripts/pulseaudio-control.bash --listen
 click-right = exec pavucontrol &
@@ -84,7 +85,7 @@ click-middle = ~/.config/polybar/scripts/pulseaudio-control.bash --change
 scroll-up = ~/.config/polybar/scripts/pulseaudio-control.bash --up
 scroll-down = ~/.config/polybar/scripts/pulseaudio-control.bash --down
 label-padding = 2
-label-foreground = #8abeb7
+label-foreground = ${colors.theme-right}
 
 [module/i3]
 type = internal/i3
@@ -97,14 +98,14 @@ label-mode-foreground = #828282
 label-mode-background = #1f1f1f
 
 label-focused = %icon%
-label-focused-background = #9cd6cf
-label-focused-foreground = #1f1f1f
+label-focused-background = #559f9f9f
+label-focused-foreground = ${colors.theme-left}
 label-focused-padding = 2
 
 label-unfocused = %icon%
 ;label-unfocused-background = #8abeb7
 label-unfocused-background = #00000000
-label-unfocused-foreground = #1f1f1f
+label-unfocused-foreground = #ffffff
 label-unfocused-padding = 2
 
 label-visible = %icon%
@@ -139,9 +140,7 @@ time = %H:%M:%S
 time-alt = %H:%M
 
 format-prefix = 
-;format-foreground = #1f1f1f
-format-foreground = #ffffff
-;format-background = #8abeb7
+format-foreground = ${colors.theme-center}
 format-background = #00000000
 format-padding = 2
 
@@ -155,11 +154,11 @@ expand-right = true
 format-spacing = 1
 
 label-open = 
-label-open-foreground = #8abeb7
+label-open-foreground = ${colors.theme-right}
 label-close =  cancel
-label-close-foreground = #8abeb7
+label-close-foreground = ${colors.theme-right}
 label-separator = |
-label-separator-foreground = #8abeb7
+label-separator-foreground = ${colors.theme-right}
 
 menu-0-0 = reboot
 menu-0-0-exec = menu-open-1

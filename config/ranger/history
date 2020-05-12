@@ -1,7 +1,3 @@
-search high
-open_with 
-mkdir opcv
-rename img.jpg
 search x
 search pr
 search pre
@@ -27,8 +23,6 @@ search zsh
 search vimrc
 search dotfile
 mkdir config
-search config
-search dot
 search comp
 search vis
 search cow
@@ -48,3 +42,9 @@ open_with%space
 mkdir Y0Ch3nBot
 search tmux
 search .config
+mkdir 專題討論
+rename .alacritty.yml
+search ala
+search .cofig
+search config
+search dot
