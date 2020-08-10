@@ -32,6 +32,8 @@ function zle-keymap-select {
 zle -N zle-keymap-select
 precmd_functions+=(_set_beam_cursor)
 zle-line-init() { zle -K viins; _set_beam_cursor }
-#=================================================#
 
-# Remember to use `p10k configure`
+#===================== p10k ======================#
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#=================================================#
