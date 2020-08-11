@@ -1,7 +1,7 @@
 #=================================================#
 #============== Zsh Basic setting ================#
 ZSH_THEME="powerlevel10k/powerlevel10k"
-export ZSH="/home/pi/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 plugins=(git vi-mode zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
